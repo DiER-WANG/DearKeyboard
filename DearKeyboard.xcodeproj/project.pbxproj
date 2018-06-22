@@ -1,0 +1,637 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		840360CF20CD699500274949 /* FancyLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 840360CE20CD699500274949 /* FancyLayout.m */; };
+		8407D5B020D12F7700F6D4BE /* NSObject+Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 8407D5AF20D12F7700F6D4BE /* NSObject+Test.m */; };
+		842D84F220AEB65800C9A745 /* DKAddressBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 842D84F120AEB65800C9A745 /* DKAddressBookViewController.m */; };
+		843D442020CA8B9500168208 /* ColumnFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 843D441F20CA8B9500168208 /* ColumnFlowLayout.m */; };
+		8472C47B2099999200E8E3CE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8472C47A2099999200E8E3CE /* AppDelegate.m */; };
+		8472C47E2099999200E8E3CE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8472C47D2099999200E8E3CE /* ViewController.m */; };
+		8472C4812099999200E8E3CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8472C47F2099999200E8E3CE /* Main.storyboard */; };
+		8472C4832099999500E8E3CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8472C4822099999500E8E3CE /* Assets.xcassets */; };
+		8472C4862099999500E8E3CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8472C4842099999500E8E3CE /* LaunchScreen.storyboard */; };
+		8472C4892099999500E8E3CE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8472C4882099999500E8E3CE /* main.m */; };
+		8472C4972099A08800E8E3CE /* KeyboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8472C4962099A08800E8E3CE /* KeyboardViewController.m */; };
+		8472C49B2099A08800E8E3CE /* DKeyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 8472C4932099A08700E8E3CE /* DKeyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A2545848D2A1DBFDFC5B4358 /* libPods-DKeyboard.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 113E33F24707BDCC58062D99 /* libPods-DKeyboard.a */; };
+		E2C0389932A16D3FE1781A40 /* libPods-DearKeyboard.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 48B36A9EFD4190E838399903 /* libPods-DearKeyboard.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8472C4992099A08800E8E3CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8472C46E2099999200E8E3CE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8472C4922099A08700E8E3CE;
+			remoteInfo = DKeyboard;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8472C49F2099A08800E8E3CE /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				8472C49B2099A08800E8E3CE /* DKeyboard.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		113E33F24707BDCC58062D99 /* libPods-DKeyboard.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DKeyboard.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A9AB393FF46456B6145791E /* Pods-DearKeyboard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DearKeyboard.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DearKeyboard/Pods-DearKeyboard.debug.xcconfig"; sourceTree = "<group>"; };
+		455C5C2BF03A8C37C2D93390 /* Pods-DKeyboard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DKeyboard.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DKeyboard/Pods-DKeyboard.debug.xcconfig"; sourceTree = "<group>"; };
+		48B36A9EFD4190E838399903 /* libPods-DearKeyboard.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DearKeyboard.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		73BA56BA94FF5B852A192AC6 /* Pods-DKeyboard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DKeyboard.release.xcconfig"; path = "Pods/Target Support Files/Pods-DKeyboard/Pods-DKeyboard.release.xcconfig"; sourceTree = "<group>"; };
+		840360CD20CD699500274949 /* FancyLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FancyLayout.h; sourceTree = "<group>"; };
+		840360CE20CD699500274949 /* FancyLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FancyLayout.m; sourceTree = "<group>"; };
+		8407D5AE20D12F7700F6D4BE /* NSObject+Test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Test.h"; sourceTree = "<group>"; };
+		8407D5AF20D12F7700F6D4BE /* NSObject+Test.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Test.m"; sourceTree = "<group>"; };
+		842D84F020AEB65800C9A745 /* DKAddressBookViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DKAddressBookViewController.h; sourceTree = "<group>"; };
+		842D84F120AEB65800C9A745 /* DKAddressBookViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DKAddressBookViewController.m; sourceTree = "<group>"; };
+		842D84F320AEB9FD00C9A745 /* DearKeyboard.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DearKeyboard.pch; sourceTree = "<group>"; };
+		843D441E20CA8B9500168208 /* ColumnFlowLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColumnFlowLayout.h; sourceTree = "<group>"; };
+		843D441F20CA8B9500168208 /* ColumnFlowLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColumnFlowLayout.m; sourceTree = "<group>"; };
+		8472C4762099999200E8E3CE /* DearKeyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DearKeyboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8472C4792099999200E8E3CE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8472C47A2099999200E8E3CE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8472C47C2099999200E8E3CE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		8472C47D2099999200E8E3CE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		8472C4802099999200E8E3CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8472C4822099999500E8E3CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8472C4852099999500E8E3CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8472C4872099999500E8E3CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8472C4882099999500E8E3CE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8472C4932099A08700E8E3CE /* DKeyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = DKeyboard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		8472C4952099A08800E8E3CE /* KeyboardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeyboardViewController.h; sourceTree = "<group>"; };
+		8472C4962099A08800E8E3CE /* KeyboardViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeyboardViewController.m; sourceTree = "<group>"; };
+		8472C4982099A08800E8E3CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D957CB889844D5A5AE2543C /* Pods-DearKeyboard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DearKeyboard.release.xcconfig"; path = "Pods/Target Support Files/Pods-DearKeyboard/Pods-DearKeyboard.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8472C4732099999200E8E3CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2C0389932A16D3FE1781A40 /* libPods-DearKeyboard.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8472C4902099A08700E8E3CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2545848D2A1DBFDFC5B4358 /* libPods-DKeyboard.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		284BC146B167D82722D0CE52 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				455C5C2BF03A8C37C2D93390 /* Pods-DKeyboard.debug.xcconfig */,
+				73BA56BA94FF5B852A192AC6 /* Pods-DKeyboard.release.xcconfig */,
+				1A9AB393FF46456B6145791E /* Pods-DearKeyboard.debug.xcconfig */,
+				9D957CB889844D5A5AE2543C /* Pods-DearKeyboard.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8472C46D2099999200E8E3CE = {
+			isa = PBXGroup;
+			children = (
+				8472C4782099999200E8E3CE /* DearKeyboard */,
+				8472C4942099A08800E8E3CE /* DKeyboard */,
+				8472C4772099999200E8E3CE /* Products */,
+				284BC146B167D82722D0CE52 /* Pods */,
+				B942870C760EAF7DF589FC83 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8472C4772099999200E8E3CE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8472C4762099999200E8E3CE /* DearKeyboard.app */,
+				8472C4932099A08700E8E3CE /* DKeyboard.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8472C4782099999200E8E3CE /* DearKeyboard */ = {
+			isa = PBXGroup;
+			children = (
+				8472C4792099999200E8E3CE /* AppDelegate.h */,
+				8472C47A2099999200E8E3CE /* AppDelegate.m */,
+				8472C47C2099999200E8E3CE /* ViewController.h */,
+				8472C47D2099999200E8E3CE /* ViewController.m */,
+				843D441E20CA8B9500168208 /* ColumnFlowLayout.h */,
+				843D441F20CA8B9500168208 /* ColumnFlowLayout.m */,
+				840360CD20CD699500274949 /* FancyLayout.h */,
+				840360CE20CD699500274949 /* FancyLayout.m */,
+				8407D5AE20D12F7700F6D4BE /* NSObject+Test.h */,
+				8407D5AF20D12F7700F6D4BE /* NSObject+Test.m */,
+				8472C47F2099999200E8E3CE /* Main.storyboard */,
+				8472C4822099999500E8E3CE /* Assets.xcassets */,
+				8472C4842099999500E8E3CE /* LaunchScreen.storyboard */,
+				8472C4872099999500E8E3CE /* Info.plist */,
+				8472C4882099999500E8E3CE /* main.m */,
+				842D84F320AEB9FD00C9A745 /* DearKeyboard.pch */,
+			);
+			path = DearKeyboard;
+			sourceTree = "<group>";
+		};
+		8472C4942099A08800E8E3CE /* DKeyboard */ = {
+			isa = PBXGroup;
+			children = (
+				8472C4952099A08800E8E3CE /* KeyboardViewController.h */,
+				8472C4962099A08800E8E3CE /* KeyboardViewController.m */,
+				842D84F020AEB65800C9A745 /* DKAddressBookViewController.h */,
+				842D84F120AEB65800C9A745 /* DKAddressBookViewController.m */,
+				8472C4982099A08800E8E3CE /* Info.plist */,
+			);
+			path = DKeyboard;
+			sourceTree = "<group>";
+		};
+		B942870C760EAF7DF589FC83 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				113E33F24707BDCC58062D99 /* libPods-DKeyboard.a */,
+				48B36A9EFD4190E838399903 /* libPods-DearKeyboard.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8472C4752099999200E8E3CE /* DearKeyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8472C48C2099999500E8E3CE /* Build configuration list for PBXNativeTarget "DearKeyboard" */;
+			buildPhases = (
+				F788AE611E271B0868FC5427 /* [CP] Check Pods Manifest.lock */,
+				8472C4722099999200E8E3CE /* Sources */,
+				8472C4732099999200E8E3CE /* Frameworks */,
+				8472C4742099999200E8E3CE /* Resources */,
+				8472C49F2099A08800E8E3CE /* Embed App Extensions */,
+				9C6A635B0B2AE34E2BFF0F10 /* [CP] Embed Pods Frameworks */,
+				81FE0CD6EA4792B16600A7AD /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8472C49A2099A08800E8E3CE /* PBXTargetDependency */,
+			);
+			name = DearKeyboard;
+			productName = DearKeyboard;
+			productReference = 8472C4762099999200E8E3CE /* DearKeyboard.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8472C4922099A08700E8E3CE /* DKeyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8472C49C2099A08800E8E3CE /* Build configuration list for PBXNativeTarget "DKeyboard" */;
+			buildPhases = (
+				8FCF94DE3C24F84FBCC207C4 /* [CP] Check Pods Manifest.lock */,
+				8472C48F2099A08700E8E3CE /* Sources */,
+				8472C4902099A08700E8E3CE /* Frameworks */,
+				8472C4912099A08700E8E3CE /* Resources */,
+				9C3B2573BF88CE47D43B79A9 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DKeyboard;
+			productName = DKeyboard;
+			productReference = 8472C4932099A08700E8E3CE /* DKeyboard.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8472C46E2099999200E8E3CE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "王昌阳";
+				TargetAttributes = {
+					8472C4752099999200E8E3CE = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					8472C4922099A08700E8E3CE = {
+						CreatedOnToolsVersion = 9.3;
+					};
+				};
+			};
+			buildConfigurationList = 8472C4712099999200E8E3CE /* Build configuration list for PBXProject "DearKeyboard" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8472C46D2099999200E8E3CE;
+			productRefGroup = 8472C4772099999200E8E3CE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8472C4752099999200E8E3CE /* DearKeyboard */,
+				8472C4922099A08700E8E3CE /* DKeyboard */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8472C4742099999200E8E3CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8472C4862099999500E8E3CE /* LaunchScreen.storyboard in Resources */,
+				8472C4832099999500E8E3CE /* Assets.xcassets in Resources */,
+				8472C4812099999200E8E3CE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8472C4912099A08700E8E3CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		81FE0CD6EA4792B16600A7AD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DearKeyboard/Pods-DearKeyboard-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8FCF94DE3C24F84FBCC207C4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DKeyboard-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9C3B2573BF88CE47D43B79A9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DKeyboard/Pods-DKeyboard-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9C6A635B0B2AE34E2BFF0F10 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DearKeyboard/Pods-DearKeyboard-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F788AE611E271B0868FC5427 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DearKeyboard-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8472C4722099999200E8E3CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8472C47E2099999200E8E3CE /* ViewController.m in Sources */,
+				8407D5B020D12F7700F6D4BE /* NSObject+Test.m in Sources */,
+				843D442020CA8B9500168208 /* ColumnFlowLayout.m in Sources */,
+				840360CF20CD699500274949 /* FancyLayout.m in Sources */,
+				8472C4892099999500E8E3CE /* main.m in Sources */,
+				8472C47B2099999200E8E3CE /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8472C48F2099A08700E8E3CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8472C4972099A08800E8E3CE /* KeyboardViewController.m in Sources */,
+				842D84F220AEB65800C9A745 /* DKAddressBookViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8472C49A2099A08800E8E3CE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8472C4922099A08700E8E3CE /* DKeyboard */;
+			targetProxy = 8472C4992099A08800E8E3CE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8472C47F2099999200E8E3CE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8472C4802099999200E8E3CE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8472C4842099999500E8E3CE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8472C4852099999500E8E3CE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8472C48A2099999500E8E3CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8472C48B2099999500E8E3CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8472C48D2099999500E8E3CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A9AB393FF46456B6145791E /* Pods-DearKeyboard.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = DearKeyboard/DearKeyboard.pch;
+				INFOPLIST_FILE = DearKeyboard/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.DearKeyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8472C48E2099999500E8E3CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D957CB889844D5A5AE2543C /* Pods-DearKeyboard.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = DearKeyboard/DearKeyboard.pch;
+				INFOPLIST_FILE = DearKeyboard/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.DearKeyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8472C49D2099A08800E8E3CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 455C5C2BF03A8C37C2D93390 /* Pods-DKeyboard.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = DearKeyboard/DearKeyboard.pch;
+				INFOPLIST_FILE = DKeyboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.DearKeyboard.DKeyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8472C49E2099A08800E8E3CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73BA56BA94FF5B852A192AC6 /* Pods-DKeyboard.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = DearKeyboard/DearKeyboard.pch;
+				INFOPLIST_FILE = DKeyboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.DearKeyboard.DKeyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8472C4712099999200E8E3CE /* Build configuration list for PBXProject "DearKeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8472C48A2099999500E8E3CE /* Debug */,
+				8472C48B2099999500E8E3CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8472C48C2099999500E8E3CE /* Build configuration list for PBXNativeTarget "DearKeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8472C48D2099999500E8E3CE /* Debug */,
+				8472C48E2099999500E8E3CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8472C49C2099A08800E8E3CE /* Build configuration list for PBXNativeTarget "DKeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8472C49D2099A08800E8E3CE /* Debug */,
+				8472C49E2099A08800E8E3CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8472C46E2099999200E8E3CE /* Project object */;
+}
