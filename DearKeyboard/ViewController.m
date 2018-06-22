@@ -9,7 +9,6 @@
 #import "ViewController.h"
 #import <APAddressBook.h>
 #import "ColumnFlowLayout.h"
-#import "NSObject+Test.h"
 
 @interface ViewController ()<UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
 
