@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		840360CF20CD699500274949 /* FancyLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 840360CE20CD699500274949 /* FancyLayout.m */; };
-		8407D5B020D12F7700F6D4BE /* NSObject+Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 8407D5AF20D12F7700F6D4BE /* NSObject+Test.m */; };
 		842D84F220AEB65800C9A745 /* DKAddressBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 842D84F120AEB65800C9A745 /* DKAddressBookViewController.m */; };
 		843D442020CA8B9500168208 /* ColumnFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 843D441F20CA8B9500168208 /* ColumnFlowLayout.m */; };
 		8472C47B2099999200E8E3CE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8472C47A2099999200E8E3CE /* AppDelegate.m */; };
@@ -55,8 +54,6 @@
 		73BA56BA94FF5B852A192AC6 /* Pods-DKeyboard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DKeyboard.release.xcconfig"; path = "Pods/Target Support Files/Pods-DKeyboard/Pods-DKeyboard.release.xcconfig"; sourceTree = "<group>"; };
 		840360CD20CD699500274949 /* FancyLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FancyLayout.h; sourceTree = "<group>"; };
 		840360CE20CD699500274949 /* FancyLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FancyLayout.m; sourceTree = "<group>"; };
-		8407D5AE20D12F7700F6D4BE /* NSObject+Test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Test.h"; sourceTree = "<group>"; };
-		8407D5AF20D12F7700F6D4BE /* NSObject+Test.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Test.m"; sourceTree = "<group>"; };
 		842D84F020AEB65800C9A745 /* DKAddressBookViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DKAddressBookViewController.h; sourceTree = "<group>"; };
 		842D84F120AEB65800C9A745 /* DKAddressBookViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DKAddressBookViewController.m; sourceTree = "<group>"; };
 		842D84F320AEB9FD00C9A745 /* DearKeyboard.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DearKeyboard.pch; sourceTree = "<group>"; };
@@ -141,8 +138,6 @@
 				843D441F20CA8B9500168208 /* ColumnFlowLayout.m */,
 				840360CD20CD699500274949 /* FancyLayout.h */,
 				840360CE20CD699500274949 /* FancyLayout.m */,
-				8407D5AE20D12F7700F6D4BE /* NSObject+Test.h */,
-				8407D5AF20D12F7700F6D4BE /* NSObject+Test.m */,
 				8472C47F2099999200E8E3CE /* Main.storyboard */,
 				8472C4822099999500E8E3CE /* Assets.xcassets */,
 				8472C4842099999500E8E3CE /* LaunchScreen.storyboard */,
@@ -364,7 +359,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				8472C47E2099999200E8E3CE /* ViewController.m in Sources */,
-				8407D5B020D12F7700F6D4BE /* NSObject+Test.m in Sources */,
 				843D442020CA8B9500168208 /* ColumnFlowLayout.m in Sources */,
 				840360CF20CD699500274949 /* FancyLayout.m in Sources */,
 				8472C4892099999500E8E3CE /* main.m in Sources */,

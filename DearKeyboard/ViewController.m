@@ -19,11 +19,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    [self printB];
-    
-    [[self class] printB];
-    
+
     self.view.backgroundColor = [UIColor whiteColor];
     // Do any additional setup after loading the view, typically from a nib.
     if ([APAddressBook access] != APAddressBookAccessGranted) {
